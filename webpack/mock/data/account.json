@@ -1,0 +1,102 @@
+[
+  {
+    "login": "admin",
+    "password": "123456",
+    "email": "admin@404.com",
+    "langKey": "zh-cn",
+    "uuid": "12345879942324927",
+    "name": "管理员",
+    "mobile": 18988753655,
+    "authorities": ["ROLE_ADMIN", "ROLE_USER"]
+  },
+  {
+    "login": "yoma",
+    "password": "123456",
+    "email": "yoma@404.com",
+    "langKey": "zh-cn",
+    "uuid": "12345879942524947",
+    "name": "神州优马",
+    "mobile": 18988754655,
+    "authorities": ["ROLE_USER"]
+  },
+  {
+    "id": 1,
+    "login": "nezha",
+    "password": "123456",
+    "email": "nezha@tiangong.com",
+    "langKey": "zh-cn",
+    "uuid": "12345879942123112",
+    "name": "哪吒",
+    "mobile": 18988753681,
+    "authorities": ["ROLE_USER"],
+    "man": {
+      "id": 11121,
+      "entityId": "12345879942123112",
+      "name": "钱得嘞神马黑科技公司",
+      "uuid": "12345879942123112",
+      "mobile": 18988753681,
+      "email": "nezha@tiangong.com",
+      "phone": "010-11770072"
+    }
+  },
+  {
+    "id": 1,
+    "login": "dabai",
+    "password": "123456",
+    "email": "dabai@xitian.com",
+    "langKey": "zh-cn",
+    "uuid": "12345879942123122",
+    "name": "白象",
+    "mobile": 18988753682,
+    "authorities": ["ROLE_LINGGONGMAN"],
+    "man": {
+      "id": 11122,
+      "entityId": "12345879942123122",
+      "name": "狮驼岭万妖集团",
+      "uuid": "12345879942123122",
+      "mobile": 18988753682,
+      "email": "dabai@xitian.com",
+      "phone": "001-11770072"
+    }
+  },
+  {
+    "id": 1,
+    "login": "aguang",
+    "password": "123456",
+    "email": "aguang@donghai.com",
+    "langKey": "zh-cn",
+    "uuid": "12345879942123123",
+    "name": "老广",
+    "mobile": 18988753683,
+    "authorities": ["ROLE_USER"],
+    "man": {
+      "id": 11122,
+      "entityId": "12345879942123122",
+      "name": "东海油焖大龙虾馆",
+      "uuid": "12345879942123123",
+      "mobile": 18988753683,
+      "email": "aguang@donghai.com",
+      "phone": "002-11770072"
+    }
+  },
+  {
+    "id": 1,
+    "login": "jia",
+    "password": "123456",
+    "email": "jia@404.com",
+    "langKey": "zh-cn",
+    "uuid": "12345879942123124",
+    "name": "郝甲德",
+    "mobile": 18988753684,
+    "authorities": ["ROLE_USER"],
+    "man": {
+      "id": 11122,
+      "entityId": "12345879942123124",
+      "name": "郝甲德",
+      "uuid": "12345879942123124",
+      "mobile": 18988753684,
+      "email": "jia@404.com",
+      "phone": "009-11770072"
+    }
+  }
+]

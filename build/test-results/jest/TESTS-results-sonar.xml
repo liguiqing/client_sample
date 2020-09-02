@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="D:\面试\interview\client\src\test\javascript\spec\app\account\login-form\login-form.component.spec.ts">
+    <testCase name="LoginForm Component should not store token if authentication is KO" duration="83">
+      <failure message="TypeError: this.$refs.mobile.focus is not a function"><![CDATA[TypeError: this.$refs.mobile.focus is not a function
+    at VueComponent.LoginForm.doLogin (D:\面试\interview\client\src\main\webapp\app\account\login-form\login-form.vue:97:1)
+    at D:\面试\interview\client\src\test\javascript\spec\app\account\login-form\login-form.component.spec.ts:59:15
+    at step (D:\面试\interview\client\node_modules\tslib\tslib.js:140:27)
+    at Object.next (D:\面试\interview\client\node_modules\tslib\tslib.js:121:57)
+    at D:\面试\interview\client\node_modules\tslib\tslib.js:114:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (D:\面试\interview\client\node_modules\tslib\tslib.js:110:16)
+    at Object.<anonymous> (D:\面试\interview\client\src\test\javascript\spec\app\account\login-form\login-form.component.spec.ts:51:56)
+    at Object.asyncJestTest (D:\面试\interview\client\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:106:37)
+    at D:\面试\interview\client\node_modules\jest-jasmine2\build\queueRunner.js:45:12
+    at new Promise (<anonymous>)
+    at mapper (D:\面试\interview\client\node_modules\jest-jasmine2\build\queueRunner.js:28:19)
+    at D:\面试\interview\client\node_modules\jest-jasmine2\build\queueRunner.js:75:41]]></failure>
+    </testCase>
+    <testCase name="LoginForm Component should store token if authentication is OK" duration="28">
+      <failure message="TypeError: this.$refs.mobile.focus is not a function"><![CDATA[TypeError: this.$refs.mobile.focus is not a function
+    at VueComponent.LoginForm.doLogin (D:\面试\interview\client\src\main\webapp\app\account\login-form\login-form.vue:97:1)
+    at D:\面试\interview\client\src\test\javascript\spec\app\account\login-form\login-form.component.spec.ts:81:15
+    at step (D:\面试\interview\client\node_modules\tslib\tslib.js:140:27)
+    at Object.next (D:\面试\interview\client\node_modules\tslib\tslib.js:121:57)
+    at D:\面试\interview\client\node_modules\tslib\tslib.js:114:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (D:\面试\interview\client\node_modules\tslib\tslib.js:110:16)
+    at Object.<anonymous> (D:\面试\interview\client\src\test\javascript\spec\app\account\login-form\login-form.component.spec.ts:72:52)
+    at Object.asyncJestTest (D:\面试\interview\client\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:106:37)
+    at D:\面试\interview\client\node_modules\jest-jasmine2\build\queueRunner.js:45:12
+    at new Promise (<anonymous>)
+    at mapper (D:\面试\interview\client\node_modules\jest-jasmine2\build\queueRunner.js:28:19)
+    at D:\面试\interview\client\node_modules\jest-jasmine2\build\queueRunner.js:75:41]]></failure>
+    </testCase>
+    <testCase name="LoginForm Component should store token if authentication is OK in session" duration="22">
+      <failure message="TypeError: this.$refs.mobile.focus is not a function"><![CDATA[TypeError: this.$refs.mobile.focus is not a function
+    at VueComponent.LoginForm.doLogin (D:\面试\interview\client\src\main\webapp\app\account\login-form\login-form.vue:97:1)
+    at D:\面试\interview\client\src\test\javascript\spec\app\account\login-form\login-form.component.spec.ts:104:15
+    at step (D:\面试\interview\client\node_modules\tslib\tslib.js:140:27)
+    at Object.next (D:\面试\interview\client\node_modules\tslib\tslib.js:121:57)
+    at D:\面试\interview\client\node_modules\tslib\tslib.js:114:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (D:\面试\interview\client\node_modules\tslib\tslib.js:110:16)
+    at Object.<anonymous> (D:\面试\interview\client\src\test\javascript\spec\app\account\login-form\login-form.component.spec.ts:95:63)
+    at Object.asyncJestTest (D:\面试\interview\client\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:106:37)
+    at D:\面试\interview\client\node_modules\jest-jasmine2\build\queueRunner.js:45:12
+    at new Promise (<anonymous>)
+    at mapper (D:\面试\interview\client\node_modules\jest-jasmine2\build\queueRunner.js:28:19)
+    at D:\面试\interview\client\node_modules\jest-jasmine2\build\queueRunner.js:75:41]]></failure>
+    </testCase>
+  </file>
+</testExecutions>
