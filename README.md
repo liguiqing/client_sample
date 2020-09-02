@@ -1,6 +1,6 @@
 # Guozhi interview for web client
 
-# you can try the default accounts：admin/123456
+# you can try login with the default account：**admin** and password **123456**
 
 ## Development
 
