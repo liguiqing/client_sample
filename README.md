@@ -97,7 +97,7 @@ Sonar is used to analyse code quality. You can start a local Sonar server (acces
 docker-compose -f src/main/docker/sonar.yml up -d
 ```
 
-# 请在此目录下搜索 “前端笔试要求” ，按要求完成所有工作，有效期 3 天。
+# 请在此项目目录下搜索 “前端笔试要求” ，按要求5个工作日内完成所有工作。
 
 ## 完成后请代码上传到https://github.com/ 或者其他源代码托管服务商，并将项目地址发送到 liguiqing@guozhihrm.com
 
