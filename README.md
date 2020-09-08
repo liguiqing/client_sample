@@ -85,17 +85,9 @@ will generate open Vue Project Manager. From there, you'll be able to manage you
 ### Client tests
 
 Unit tests are run by [Jest][] and written with [Jasmine][]. They're located in [src/test/javascript/](src/test/javascript/) and can be run with:
-npm test
+npm run test
 
-For more information, refer to the [Running tests page][].
 
-### Code quality
-
-Sonar is used to analyse code quality. You can start a local Sonar server (accessible on http://localhost:9001) with:
-
-```
-docker-compose -f src/main/docker/sonar.yml up -d
-```
 
 # 请在此项目目录下搜索 “前端笔试要求” ，按要求5个工作日内完成所有工作。
 
