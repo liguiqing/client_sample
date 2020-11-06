@@ -1,6 +1,23 @@
-# Guozhi interview for web client
+## 国智前端程序员面试练习项目
 
-# you can try the default accounts：admin/123456
+
+安装及启动：
+
+    npm install
+    
+    npm run mock
+    
+### Project运行成功后，可以使用：**用户名：admin** 及密码 **123456** 登录系统。如果不清楚如何在开发环境下运行此Project，请认真阅读本文档的Development部分内容。
+
+
+
+### 请在此项目目录下搜索 “前端笔试要求” ，按要求5个工作日内完成所有工作。
+
+### 完成后请代码上传到https://github.com/ 或者其他源代码托管服务商，并将项目地址发送到 liguiqing@guozhihrm.com
+
+### 开发过程中有任务疑问请发邮件到 liguiqing@guozhihrm.com
+
+### 本文的最有提供了一个vs code 的运行配置文件，可以帮助更高效的完成任务
 
 ## Development
 
@@ -85,23 +102,9 @@ will generate open Vue Project Manager. From there, you'll be able to manage you
 ### Client tests
 
 Unit tests are run by [Jest][] and written with [Jasmine][]. They're located in [src/test/javascript/](src/test/javascript/) and can be run with:
-npm test
+npm run test
 
-For more information, refer to the [Running tests page][].
 
-### Code quality
-
-Sonar is used to analyse code quality. You can start a local Sonar server (accessible on http://localhost:9001) with:
-
-```
-docker-compose -f src/main/docker/sonar.yml up -d
-```
-
-# 请在此目录下搜索 “前端笔试要求” ，按要求完成所有工作，有效期 3 天。
-
-## 完成后请代码上传到https://github.com/ 或者其他源代码托管服务商，并将项目地址发送到 liguiqing@guozhihrm.com
-
-### 开发过程中有任务疑问请发邮件到 liguiqing@guozhihrm.com
 
 ## Vscode launch.json
 
