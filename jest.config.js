@@ -1,4 +1,6 @@
 module.exports = {
+  verbose: true,
+  testEnvironment: 'node',
   coverageDirectory: '<rootDir>/build/test-results/',
   coveragePathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/src/test/javascript', '<rootDir>/src/main/webapp/app/router', '.*.json'],
   moduleFileExtensions: ['js', 'json', 'ts', 'vue'],
@@ -13,7 +15,7 @@ module.exports = {
   testResultsProcessor: 'jest-sonar-reporter',
   testMatch: ['<rootDir>/src/test/javascript/spec/**/@(*.)@(spec.ts)'],
   snapshotSerializers: ['<rootDir>/node_modules/jest-serializer-vue'],
-  rootDir: '../../../',
+  rootDir: '.',
   coverageThreshold: {
     global: {
       statements: 80,

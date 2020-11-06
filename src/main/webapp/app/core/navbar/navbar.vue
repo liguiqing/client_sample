@@ -22,6 +22,7 @@
                 <em class="el-icon-arrow-down el-icon--right"></em>
               </span>
               <el-dropdown-menu slot="dropdown">
+                <el-alert title=""></el-alert>
                 <el-dropdown-item icon="el-icon-setting"><span @click="toSettings()">用户设置</span></el-dropdown-item>
                 <el-dropdown-item icon="el-icon-switch-button"><span @click="logout()">退出</span></el-dropdown-item>
               </el-dropdown-menu>

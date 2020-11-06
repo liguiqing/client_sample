@@ -8,6 +8,7 @@
     "node_modules"
   ],
   "dependencies": {
+    "ant-design-vue": "^1.6.5",
     "axios": "0.19.2",
     "date-fns": "2.14.0",
     "element-ui": "^2.13.2",
@@ -105,7 +106,7 @@
     "start-tls": "npm run webpack:dev -- --env.tls",
     "serve": "npm run start",
     "build": "npm run webpack:prod",
-    "jest": "jest --coverage --logHeapUsage --maxWorkers=2 --no-cache --config src/test/javascript/jest.conf.js",
+    "jest": "jest --coverage --logHeapUsage --env=jsdom --maxWorkers=2 --no-cache --config jest.config.js",
     "jest:update": "npm run jest -- --updateSnapshot",
     "webpack:build": "npm run cleanup && npm run webpack:build:main",
     "webpack:build:main": "npm run webpack -- --config webpack/webpack.dev.js --progress --profile",

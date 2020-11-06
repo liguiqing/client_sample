@@ -7,16 +7,19 @@ import TranslationService from '@/locale/translation.service';
 import * as config from '@/shared/config/config';
 import LoginForm from '@/account/login-form/login-form.vue';
 import LoginFormClass from '@/account/login-form/login-form.component';
+import ValidateService from '@/shared/validation/validate.service';
+import ElementUI from 'element-ui';
 
 const localVue = createLocalVue();
-localVue.component('el-form', {});
-localVue.component('el-form-item', {});
-localVue.component('el-input', {});
-localVue.component('el-tabs', {});
-localVue.component('el-tab-pane', {});
-localVue.component('el-button', {});
-localVue.component('el-checkbox', {});
-localVue.component('el-link', {});
+// localVue.component('el-form', {});
+// localVue.component('el-form-item', {});
+// localVue.component('el-input', {});
+// localVue.component('el-tabs', {});
+// localVue.component('el-tab-pane', {});
+// localVue.component('el-button', {});
+// localVue.component('el-checkbox', {});
+// localVue.component('el-link', {});
+localVue.use(ElementUI);
 const mockedAxios: any = axios;
 
 config.initVueApp(localVue);
@@ -43,6 +46,7 @@ describe('LoginForm Component', () => {
       localVue,
       provide: {
         accountService: () => new AccountService(store, new TranslationService(store, i18n), router),
+        validateService: () => new ValidateService(),
       },
     });
     loginForm = wrapper.vm;
@@ -50,8 +54,8 @@ describe('LoginForm Component', () => {
 
   it('should not store token if authentication is KO', async () => {
     // GIVEN
-    loginForm.login = 'login';
-    loginForm.password = 'pwd';
+    loginForm.userLogin.login = 'login';
+    loginForm.userLogin.password = 'pwd';
     loginForm.rememberMe = true;
     mockedAxios.post.mockReturnValue(Promise.reject());
 
@@ -71,8 +75,9 @@ describe('LoginForm Component', () => {
 
   it('should store token if authentication is OK', async () => {
     // GIVEN
-    loginForm.login = 'login';
-    loginForm.password = 'pwd';
+    loginForm.activeName = 'userName';
+    loginForm.userLogin.login = 'login';
+    loginForm.userLogin.password = 'pwd11111';
     loginForm.rememberMe = true;
     const jwtSecret = 'jwt-secret';
     mockedAxios.post.mockReturnValue(Promise.resolve({ headers: { authorization: 'Bearer ' + jwtSecret } }));
@@ -84,7 +89,7 @@ describe('LoginForm Component', () => {
     // THEN
     expect(mockedAxios.post).toHaveBeenCalledWith('api/authenticate', {
       username: 'login',
-      password: 'pwd',
+      password: 'pwd111111',
       rememberMe: true,
     });
 
@@ -94,8 +99,8 @@ describe('LoginForm Component', () => {
 
   it('should store token if authentication is OK in session', async () => {
     // GIVEN
-    loginForm.login = 'login';
-    loginForm.password = 'pwd';
+    loginForm.userLogin.login = 'login';
+    loginForm.userLogin.password = 'pwd';
     loginForm.rememberMe = false;
     const jwtSecret = 'jwt-secret';
     mockedAxios.post.mockReturnValue(Promise.resolve({ headers: { authorization: 'Bearer ' + jwtSecret } }));

@@ -5,7 +5,11 @@
         <span class="img-fluid rounded"></span>
       </div>
       <div class="col-md-9">
-        <h1 v-text="$t('error.title')">Error Page!</h1>
+        <h1 v-text="$t('error.title')">
+          <div>
+            Error Page!
+          </div>
+        </h1>
 
         <div v-if="errorMessage">
           <div class="alert alert-danger">{{ errorMessage }}</div>

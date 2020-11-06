@@ -2,6 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.common with an alias.
 import Vue from 'vue';
 import ElementUI from 'element-ui';
+// import Antd from 'ant-design-vue';
 import EventBus from 'vue-bus-ts';
 import App from './app.vue';
 import Vue2Filters from 'vue2-filters';
@@ -11,12 +12,20 @@ import * as config from './shared/config/config';
 import 'element-ui/lib/theme-chalk/display.css';
 import '../content/scss/element-override.scss';
 
+import 'ant-design-vue/dist/antd.css';
+Vue.config.productionTip = false;
+
 import AlertService from '@/shared/alert/alert.service';
 import TranslationService from '@/locale/translation.service';
 import ValidateService from '@/shared/validation/validate.service';
 import LoginService from './account/login.service';
 import AccountService from './account/account.service';
+import { formatISO } from 'date-fns';
 
+/* tslint:disable */
+Date.prototype.toJSON = function () {
+  return formatISO(this);
+};
 /* tslint:enable */
 Vue.config.productionTip = false;
 config.initVueApp(Vue);

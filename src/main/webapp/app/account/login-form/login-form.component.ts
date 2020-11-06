@@ -75,9 +75,6 @@ export default class LoginForm extends Vue {
     ],
   };
 
-  public login = null;
-  public password = null;
-
   public rememberMe: boolean = null;
 
   public mobileFormName = 'mobileLoginForm';

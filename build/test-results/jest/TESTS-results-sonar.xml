@@ -1,53 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="D:\面试\interview\client\src\test\javascript\spec\app\account\login-form\login-form.component.spec.ts">
-    <testCase name="LoginForm Component should not store token if authentication is KO" duration="83">
-      <failure message="TypeError: this.$refs.mobile.focus is not a function"><![CDATA[TypeError: this.$refs.mobile.focus is not a function
-    at VueComponent.LoginForm.doLogin (D:\面试\interview\client\src\main\webapp\app\account\login-form\login-form.vue:97:1)
-    at D:\面试\interview\client\src\test\javascript\spec\app\account\login-form\login-form.component.spec.ts:59:15
+    <testCase name="LoginForm Component should not store token if authentication is KO" duration="1"/>
+    <testCase name="LoginForm Component should store token if authentication is OK" duration="177">
+      <failure message="TypeError: el.validate is not a function"><![CDATA[TypeError: el.validate is not a function
+    at VueComponent.LoginForm.doLogin (D:\面试\interview\client\src\main\webapp\app\account\login-form\login-form.vue:104:1)
+    at D:\面试\interview\client\src\test\javascript\spec\app\account\login-form\login-form.component.spec.ts:86:15
     at step (D:\面试\interview\client\node_modules\tslib\tslib.js:140:27)
     at Object.next (D:\面试\interview\client\node_modules\tslib\tslib.js:121:57)
     at D:\面试\interview\client\node_modules\tslib\tslib.js:114:75
     at new Promise (<anonymous>)
     at Object.__awaiter (D:\面试\interview\client\node_modules\tslib\tslib.js:110:16)
-    at Object.<anonymous> (D:\面试\interview\client\src\test\javascript\spec\app\account\login-form\login-form.component.spec.ts:51:56)
+    at Object.<anonymous> (D:\面试\interview\client\src\test\javascript\spec\app\account\login-form\login-form.component.spec.ts:76:52)
     at Object.asyncJestTest (D:\面试\interview\client\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:106:37)
     at D:\面试\interview\client\node_modules\jest-jasmine2\build\queueRunner.js:45:12
     at new Promise (<anonymous>)
     at mapper (D:\面试\interview\client\node_modules\jest-jasmine2\build\queueRunner.js:28:19)
-    at D:\面试\interview\client\node_modules\jest-jasmine2\build\queueRunner.js:75:41]]></failure>
+    at D:\面试\interview\client\node_modules\jest-jasmine2\build\queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)]]></failure>
     </testCase>
-    <testCase name="LoginForm Component should store token if authentication is OK" duration="28">
-      <failure message="TypeError: this.$refs.mobile.focus is not a function"><![CDATA[TypeError: this.$refs.mobile.focus is not a function
-    at VueComponent.LoginForm.doLogin (D:\面试\interview\client\src\main\webapp\app\account\login-form\login-form.vue:97:1)
-    at D:\面试\interview\client\src\test\javascript\spec\app\account\login-form\login-form.component.spec.ts:81:15
+    <testCase name="LoginForm Component should store token if authentication is OK in session" duration="113">
+      <failure message="Error: expect(jest.fn()).toHaveBeenCalledWith(...expected)"><![CDATA[Error: expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+Expected: "api/authenticate", {"password": "pwd", "rememberMe": false, "username": "login"}
+
+Number of calls: 0
+    at D:\面试\interview\client\src\test\javascript\spec\app\account\login-form\login-form.component.spec.ts:113:30
     at step (D:\面试\interview\client\node_modules\tslib\tslib.js:140:27)
     at Object.next (D:\面试\interview\client\node_modules\tslib\tslib.js:121:57)
-    at D:\面试\interview\client\node_modules\tslib\tslib.js:114:75
-    at new Promise (<anonymous>)
-    at Object.__awaiter (D:\面试\interview\client\node_modules\tslib\tslib.js:110:16)
-    at Object.<anonymous> (D:\面试\interview\client\src\test\javascript\spec\app\account\login-form\login-form.component.spec.ts:72:52)
-    at Object.asyncJestTest (D:\面试\interview\client\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:106:37)
-    at D:\面试\interview\client\node_modules\jest-jasmine2\build\queueRunner.js:45:12
-    at new Promise (<anonymous>)
-    at mapper (D:\面试\interview\client\node_modules\jest-jasmine2\build\queueRunner.js:28:19)
-    at D:\面试\interview\client\node_modules\jest-jasmine2\build\queueRunner.js:75:41]]></failure>
-    </testCase>
-    <testCase name="LoginForm Component should store token if authentication is OK in session" duration="22">
-      <failure message="TypeError: this.$refs.mobile.focus is not a function"><![CDATA[TypeError: this.$refs.mobile.focus is not a function
-    at VueComponent.LoginForm.doLogin (D:\面试\interview\client\src\main\webapp\app\account\login-form\login-form.vue:97:1)
-    at D:\面试\interview\client\src\test\javascript\spec\app\account\login-form\login-form.component.spec.ts:104:15
-    at step (D:\面试\interview\client\node_modules\tslib\tslib.js:140:27)
-    at Object.next (D:\面试\interview\client\node_modules\tslib\tslib.js:121:57)
-    at D:\面试\interview\client\node_modules\tslib\tslib.js:114:75
-    at new Promise (<anonymous>)
-    at Object.__awaiter (D:\面试\interview\client\node_modules\tslib\tslib.js:110:16)
-    at Object.<anonymous> (D:\面试\interview\client\src\test\javascript\spec\app\account\login-form\login-form.component.spec.ts:95:63)
-    at Object.asyncJestTest (D:\面试\interview\client\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:106:37)
-    at D:\面试\interview\client\node_modules\jest-jasmine2\build\queueRunner.js:45:12
-    at new Promise (<anonymous>)
-    at mapper (D:\面试\interview\client\node_modules\jest-jasmine2\build\queueRunner.js:28:19)
-    at D:\面试\interview\client\node_modules\jest-jasmine2\build\queueRunner.js:75:41]]></failure>
+    at fulfilled (D:\面试\interview\client\node_modules\tslib\tslib.js:111:62)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)]]></failure>
     </testCase>
   </file>
 </testExecutions>
